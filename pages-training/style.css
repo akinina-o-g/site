@@ -1,0 +1,34 @@
+.one{
+	height: 300pх;
+	width: 300pх;
+	background: #820202;
+	transition-duration: .5s;
+	transform: rotate(0);
+}
+.two{
+	width: 100pх;
+	height: 100pх;
+	background: grey;
+}
+.one:hover{
+	transform: rotate(90deg);
+	transition-duration: 1s;
+	background: blue;
+	border-radius: 50%;
+}
+.square{
+	width: 90pх;
+	height: 90pх;
+	margin: 30pх auto;
+	background-color: #123456;
+	animation-name: spin;
+	animation-direction: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes spin{
+	0%{transform: rotate(0);}
+	25%{background-color: yellow;}
+	100%{transform: rotate(360deg);}
+}
